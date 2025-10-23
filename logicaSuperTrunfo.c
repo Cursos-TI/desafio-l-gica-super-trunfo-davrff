@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-#define MAX 50
+#define MAX 50 // Define o tamanho maximo das strings.
 
+// Estrutura que representa uma carta do Super trunfo
 typedef struct {
     char estado[MAX];
     char codigo[MAX];
@@ -16,6 +17,8 @@ typedef struct {
 
 int main() {
    Carta, carta1, carta2:
+
+   // Cadastro das Cartas
 
    printf("=== Cadastro da Carta 1 ===\n");
    printf("Estado (ex: SP): ");
@@ -49,12 +52,14 @@ int main() {
     printf("Número de pontos turísticos: ");
     scanf("%d", &carta2.pontosTuristicos);
 
+    // Calculos dos atributos
     carta1.densidadePopulacional = carta1.populacao / carta1.area;
     carta2.densidadePopulacional = carta2.populacao / carta2.area;
 
     carta1.pibPerCapita = carta1.pib / carta1.populacao;
     carta2.pibPerCapita = carta2.pib / carta2.populacao;
 
+    // Exibição do dados
     printf("\n=== Dados das Cartas ===\n");
     printf("\nCarta 1: %s - %s (%s)\n", carta1.estado, carta1.codigo, carta1.cidade);
     printf("População: %d\nÁrea: %.2f km²\nPIB: %.2f\nPontos turísticos: %d\n", 
@@ -68,6 +73,7 @@ int main() {
     printf("Densidade populacional: %.2f\nPIB per capita: %.2f\n", 
         carta2.densidadePopulacional, carta2.pibPerCapita);
 
+        // Comparação
         int atributo = 1;
         int vencedor = 0;
 
@@ -80,6 +86,7 @@ int main() {
             vencedor = 2;
     }
 
+    // Resultado
      printf("%s: %d habitantes\n", carta1.cidade, carta1.populacao);
      printf("%s: %d habitantes\n", carta2.cidade, carta2.populacao);
 
