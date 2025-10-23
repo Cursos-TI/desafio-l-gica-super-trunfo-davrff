@@ -55,6 +55,21 @@ int main() {
     carta1.pibPerCapita = carta1.pib / carta1.populacao;
     carta2.pibPerCapita = carta2.pib / carta2.populacao;
 
+    printf("\n=== Dados das Cartas ===\n");
+    printf("\nCarta 1: %s - %s (%s)\n", carta1.estado, carta1.codigo, carta1.cidade);
+    printf("População: %d\nÁrea: %.2f km²\nPIB: %.2f\nPontos turísticos: %d\n", 
+        carta1.populacao, carta1.area, carta1.pib, carta1.pontosTuristicos);
+    printf("Densidade populacional: %.2f\nPIB per capita: %.2f\n", 
+        carta1.densidadePopulacional, carta1.pibPerCapita);
+
+        printf("\nCarta 2: %s - %s (%s)\n", carta2.estado, carta2.codigo, carta2.cidade);
+    printf("População: %d\nÁrea: %.2f km²\nPIB: %.2f\nPontos turísticos: %d\n", 
+        carta2.populacao, carta2.area, carta2.pib, carta2.pontosTuristicos);
+    printf("Densidade populacional: %.2f\nPIB per capita: %.2f\n", 
+        carta2.densidadePopulacional, carta2.pibPerCapita);
+
+        
+
     
 
     return 0;
