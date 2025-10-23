@@ -68,7 +68,8 @@ int main() {
     printf("Densidade populacional: %.2f\nPIB per capita: %.2f\n", 
         carta2.densidadePopulacional, carta2.pibPerCapita);
 
-        
+        int atributo = 1;
+        int vencedor = 0;
 
     
 
