@@ -80,6 +80,16 @@ int main() {
             vencedor = 2;
     }
 
+     printf("%s: %d habitantes\n", carta1.cidade, carta1.populacao);
+     printf("%s: %d habitantes\n", carta2.cidade, carta2.populacao);
+
+     if (vencedor == 1)
+     printf("\nResultado: Carta 1 (%s) venceu!\n", carta1.cidade);
+     else if (vencedor == 2)
+     printf("\nResultado: Carta 2 (%s) venceu!\n", carta2.cidade);
+     else
+     printf("\nResultado: Empate!\n");
+
     
 
     return 0;
