@@ -49,6 +49,12 @@ int main() {
     printf("Número de pontos turísticos: ");
     scanf("%d", &carta2.pontosTuristicos);
 
+    carta1.densidadePopulacional = carta1.populacao / carta1.area;
+    carta2.densidadePopulacional = carta2.populacao / carta2.area;
+
+    carta1.pibPerCapita = carta1.pib / carta1.populacao;
+    carta2.pibPerCapita = carta2.pib / carta2.populacao;
+
     
 
     return 0;
