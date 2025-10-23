@@ -71,6 +71,15 @@ int main() {
         int atributo = 1;
         int vencedor = 0;
 
+        printf("\n=== Comparação (Atributo: População) ===\n");
+
+        if (atributo == 1) {
+        if (carta1.populacao > carta2.populacao)
+            vencedor = 1;
+        else if (carta2.populacao > carta1.populacao)
+            vencedor = 2;
+    }
+
     
 
     return 0;
